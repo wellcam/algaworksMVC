@@ -14,34 +14,34 @@
 	</nav>
 
 
-	<form class="form-horizontal" action="">
+	<form class="form-horizontal" action="/titulo" method="POST" >
 		<div class="card">
 			<div class="card-header">Novo Título</div>
 			<div class="card-body">
 				<div class="form-group row">
 					<label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
 					<div class="col-sm-4">
-						<input type="text" class="form-control" id="descricao">
+						<input type="text" class="form-control" id="descricao" name="descricao">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="dataVencimento" class="col-sm-2 col-form-label">Data de Vencimento</label>
 					<div class="col-sm-2">
-						<input type="text" class="form-control" id="dataVencimento">
+						<input type="text" class="form-control" id="dataVencimento" name="dataVencimento">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="valor" class="col-sm-2 col-form-label">Valor</label>
 					<div class="col-sm-2">
-						<input type="text" class="form-control" id="valor">
+						<input type="text" class="form-control" id="valor" name="valor">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="status" class="col-sm-2 col-form-label">Status</label>
 						<div class="col-sm-2">
-							<select class="custom-select">
-								<option>Pendente</option>
-								<option>Recebido</option>
+							<select class="custom-select" name="status">
+								<option value="PENDENTE">Pendente</option>
+								<option value="RECEBIDO">Recebido</option>
 							</select>
 						</div>
 				</div>
